@@ -4,19 +4,7 @@ title:  "CSV files need SQL"
 date:   2012-03-31 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2012/03/hadoop_and_sing.html">&laquo; Hadoop and single file to mapper processing flow</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/04/email_gource_ha.html">Email, Gource, Hadoop, and Python &raquo;</a>
-
-</p>
-
-<h2>March 31, 2012</h2>
-
-<h3>CSV files need SQL</h3>
 
 <p>As part of learning about <a href="http://www.r-project.org/">R</a> it soon has become apparent that the basic unit of currency is a CSV file - there are lots of other ways of getting data in and out of the R environment (JSON with library(RJSONIO), DB intefaces with library(RPostgreSQL) ...) but for the majority of work (which consists of hackery and experimentation which is why R is so attractive) CSV is the transportation mechanism.</p>
 <p>

@@ -4,17 +4,7 @@ title:  "SAP::Rfc 0.15 for Ruby"
 date:   2006-04-12 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/03/builiding_perl.html">&laquo; Builiding Perl SAP::Rfc for win32</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/04/general_round_u.html">General round up of SAP RFC releases &raquo;</a>
-
-</p>
-
-<h2>April 12, 2006</h2>
-
-<h3>SAP::Rfc 0.15 for Ruby</h3>
 
 <p>
 SAP::Rfc for Ruby version 0.15 has a large number of changes.  These include:<br/>

@@ -4,17 +4,7 @@ title:  "SAP R/3 + Python = saprfc"
 date:   2004-08-01 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2004/06/stop_energy.html">&laquo; Stop Energy</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/05/sap_and_planet.html">SAP - and Planet SAP &raquo;</a>
-
-</p>
-
-<h2>August  1, 2004</h2>
-
-<h3>SAP R/3 + Python = saprfc</h3>
 
 <p>
 saprfc for Python has been updated, to include support for registered RFCs

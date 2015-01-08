@@ -4,17 +4,7 @@ title:  "Creating a proxy server in Perl that handles SSL too"
 date:   2002-09-03 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2002/07/oscon_2002_embe.html">&laquo; OSCON 2002 - Embedding Perl with Inline</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2002/09/an_amendment_to.html">An amendment to the http/https proxy server in Perl &raquo;</a>
-
-</p>
-
-<h2>September  3, 2002</h2>
-
-<h3>Creating a proxy server in Perl that handles SSL too</h3>
 
 <a href='http://www.pipetree.com/qmacro/'>DJ</a> got to talking about HTTP
 proxies, and how they are important.  He also mentioned the usefulness of

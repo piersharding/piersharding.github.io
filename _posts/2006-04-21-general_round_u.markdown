@@ -4,17 +4,7 @@ title:  "General round up of SAP RFC releases"
 date:   2006-04-21 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/04/saprfc_015_for.html">&laquo; SAP::Rfc 0.15 for Ruby</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/04/radrails_rails.html">RadRails, Rails, Ruby, and SAP &raquo;</a>
-
-</p>
-
-<h2>April 21, 2006</h2>
-
-<h3>General round up of SAP RFC releases</h3>
 
 <p>
 Things have been hotting up lately with my three RFC connectors for SAP using  Perl, Python and Ruby.

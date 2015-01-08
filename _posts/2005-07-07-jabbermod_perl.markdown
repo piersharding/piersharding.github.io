@@ -4,17 +4,7 @@ title:  "Jabber::mod_perl 0.06 released"
 date:   2005-07-07 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/07/saprfc_and_sapr.html">&laquo; SAP::Rfc and SAP::Rfc gives SAP RFC</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/07/grokster_a_very.html">Grokster - A very sad day for America &raquo;</a>
-
-</p>
-
-<h2>July  7, 2005</h2>
-
-<h3>Jabber::mod_perl 0.06 released</h3>
 
 <p>
 Announcing <a href='http://search.cpan.org/dist/Jabber-mod_perl/'>Jabber::mod_perl 0.06</a>.

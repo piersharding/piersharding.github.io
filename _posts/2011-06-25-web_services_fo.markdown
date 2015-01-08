@@ -4,19 +4,7 @@ title:  "Web Services for Mahara"
 date:   2011-06-25 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2010/09/moodle_oauth_an.html">&laquo; Moodle, OAuth, and Google Fusion</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/03/journey_into_ha.html">Journey into Hadoop &raquo;</a>
-
-</p>
-
-<h2>June 25, 2011</h2>
-
-<h3>Web Services for Mahara</h3>
 
 <p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="mahara.png" src="http://www.piersharding.com/blog/mahara.png" width="160" height="160" class="mt-image-none" style="" /></span></p>
 

@@ -4,17 +4,7 @@ title:  "Ruby, Ruby on Rails, and SAP Web Services Integration"
 date:   2006-10-15 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/10/changing_parame.html">&laquo; Changing parameters in saprfc for Ruby</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/10/sapwas_for_ruby.html">sapwas for Ruby and HTTPS &raquo;</a>
-
-</p>
-
-<h2>October 15, 2006</h2>
-
-<h3>Ruby, Ruby on Rails, and SAP Web Services Integration</h3>
 
 <p>
 Something I like about Scripting Languages is the way they revel in having "more than one way to skin a cat".  So, in this spirit I have built a complementary interface to saprfc (for Ruby) called sapwas, that facilitates RFC calls via SAP Web Services.  This has been integrated into sap4rails, and the attached example demonstrates how to substitue Web Services for RFC integration in Ruby on Rails.

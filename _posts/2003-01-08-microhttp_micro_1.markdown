@@ -4,17 +4,7 @@ title:  "microhttp - Micro HTTP Client  becomes a library - updated"
 date:   2003-01-08 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/01/microhttp_micro.html">&laquo; microhttp - Micro HTTP Client  becomes a library</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2003/01/saprfc_for_ruby.html">SAP::Rfc for Ruby &raquo;</a>
-
-</p>
-
-<h2>January  8, 2003</h2>
-
-<h3>microhttp - Micro HTTP Client  becomes a library - updated</h3>
 
 libmhttp and HTTP::MHTTP has been updated to include support for 
 binary files.

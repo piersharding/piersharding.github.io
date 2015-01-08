@@ -4,19 +4,7 @@ title:  "Moodle, OAuth, and Google Fusion"
 date:   2010-09-06 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2009/08/new_release_for.html">&laquo; New release for sapnwrfc PHP and Python</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2011/06/web_services_fo.html">Web Services for Mahara &raquo;</a>
-
-</p>
-
-<h2>September  6, 2010</h2>
-
-<h3>Moodle, OAuth, and Google Fusion</h3>
 
 <p>Convergence is a strange and reoccurring theme, and it's happened again from me over the last few months with BI reporting, <a href="http://www.moodle.org">Moodle</a>, <a href="http://oauth.net">OAuth</a>, and Google.</p>
 

@@ -4,19 +4,7 @@ title:  "New release for sapnwrfc PHP and Python"
 date:   2009-08-27 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2009/08/auth_saml_20_fo.html">&laquo; Auth SAML 2.0 for Mahara</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2010/09/moodle_oauth_an.html">Moodle, OAuth, and Google Fusion &raquo;</a>
-
-</p>
-
-<h2>August 27, 2009</h2>
-
-<h3>New release for sapnwrfc PHP and Python</h3>
 
 <p>Been a busy month, working on the NW SAP RFC connectors.  With build help from Menelaos, I now have a working Python build system for Windows on the Python NW RFC Connector as of version 0.07 - this is available <a href="http://www.piersharding.com/download/python/sapnwrfc/">here</a>.</p>
 

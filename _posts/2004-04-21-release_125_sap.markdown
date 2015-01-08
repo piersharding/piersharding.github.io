@@ -4,17 +4,7 @@ title:  "Release 1.25 - SAP::Rfc for Perl"
 date:   2004-04-21 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2004/04/calling_perl_fr.html">&laquo; Calling Perl from Java</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2004/06/stop_energy.html">Stop Energy &raquo;</a>
-
-</p>
-
-<h2>April 21, 2004</h2>
-
-<h3>Release 1.25 - SAP::Rfc for Perl</h3>
 
 Release 1.25 for Perl SAP::Rfc brings two new features for registered RFC
 calls.  These are:

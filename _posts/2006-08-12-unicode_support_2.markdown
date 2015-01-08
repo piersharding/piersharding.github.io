@@ -4,17 +4,7 @@ title:  "Unicode support for Perl SAP::Rfc and Ruby saprfc"
 date:   2006-08-12 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/05/sap4rails_sap_r.html">&laquo; sap4rails - SAP RFC support for Ruby on Rails</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/09/new_module_sapw.html">New module SAP::WAS - SAP Web Services for Ruby &raquo;</a>
-
-</p>
-
-<h2>August 12, 2006</h2>
-
-<h3>Unicode support for Perl SAP::Rfc and Ruby saprfc</h3>
 
 I am pleased to announce some support for UNICODE in Perl SAP::Rfc and  Ruby saprfc.  This is a major step forward, as it incorporates for the first time the use of the SAP supplied Unicode RFC library - librfcu*.<br/>
 Please download <a href='http://search.cpan.org/search?dist=SAP-Rfc'>SAP::Rfc 1.45  for Perl</a> and <a href='/download/ruby/saprfc-0.21.tar.gz'>saprfc-0.21 for Ruby</a> and follow the build instructions in the README file.  Make sure that you retrieve u16lit.pl form http://service.sap.com, and the appropriate rfcsdk containing the unicode libraries from SAP.

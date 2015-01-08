@@ -4,17 +4,7 @@ title:  "New module SAP::WAS - SAP Web Services for Ruby"
 date:   2006-09-01 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/08/unicode_support_2.html">&laquo; Unicode support for Perl SAP::Rfc and Ruby saprfc</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/09/sap4rails_now_h.html">sap4rails now has SAP::WAS - SAP Web Services Integraton &raquo;</a>
-
-</p>
-
-<h2>September  1, 2006</h2>
-
-<h3>New module SAP::WAS - SAP Web Services for Ruby</h3>
 
 <p>Announcing my new Project SAP::WAS for Ruby.  This library enables SAP Web Services access encapsulated in the same manner as SAP::Rfc - abstracting away the complexities of dealing with SOAP packet encapsulation, and bringing the benefits of interface discovery.<br/><br />
 The library can be found by following the directions <a href='http://raa.ruby-lang.org/project/sapwas'>here</a>.</p>

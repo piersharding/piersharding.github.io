@@ -4,17 +4,7 @@ title:  "OSCON 2002 - Embedding Perl with Inline"
 date:   2002-07-28 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2002/05/a_taste_for_inl.html">&laquo; A taste for Inline</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2002/09/creating_a_prox.html">Creating a proxy server in Perl that handles SSL too &raquo;</a>
-
-</p>
-
-<h2>July 28, 2002</h2>
-
-<h3>OSCON 2002 - Embedding Perl with Inline</h3>
 
 This year I gave a <a
 href='http://conferences.oreillynet.com/cs/os2002/view/e_sess/2731'>talk</a>

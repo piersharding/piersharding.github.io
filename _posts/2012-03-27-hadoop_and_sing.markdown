@@ -4,19 +4,7 @@ title:  "Hadoop and single file to mapper processing flow"
 date:   2012-03-27 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2012/03/journey_into_ha.html">&laquo; Journey into Hadoop</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/03/csv_files_need.html">CSV files need SQL &raquo;</a>
-
-</p>
-
-<h2>March 27, 2012</h2>
-
-<h3>Hadoop and single file to mapper processing flow</h3>
 
 <p>It seems like a trivial thing to want to do, but it appears that the standard Hadoop workflow is to treat all input files as line oriented transactions, which does not help at all when I want to process on a file by file basis.  The example I was working through is where I have 20 years worth of mbox email files.  Each file needs to be broken into individual emails, the contents parsed, and useful information in the headers stripped out into a convenient format for subsequent processing.  To do this in the context of Hadoop is slightly odd.  It appears that the usual approach is to create an input file of mbox file names (loaded into HDFS), and then each mapper execution uses the HDFS API to pull the file and process it.</p>
 

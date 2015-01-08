@@ -4,17 +4,7 @@ title:  "RStudio Server and SSO"
 date:   2014-07-20 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2013/09/integrating_r_w.html">&laquo; Integrating R with Pentaho</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-</p>
-
-<h2>July 20, 2014</h2>
-
-<h3>RStudio Server and SSO</h3>
 
 <a href="http://www.rstudio.com/">Rstudio Server</a> is a powerful analytics workbench that I have implemented for customers as a standalone service.  Out of the box it provides fantastic tools for code management, data access and interactive visualisations, however, it is not possible in the open source release to integrate it with Web based authentication solutions.  This is a problem for delivering application as SaaS, as most clients will come with SAML, Shibboleth, CAS or OAuth type integration requirements.<br/>
 RStudio Server is a mixture of C++ and GWT, with the HTTP server side component being predominantly C++, and it turns out that it is not too hard to hack (in the old school meaning of the word).  The simplest solution for my purposes, to add in external web based authentication is to add in support for identity being passed through by headers.  it works like this:

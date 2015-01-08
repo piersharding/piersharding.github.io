@@ -4,17 +4,7 @@ title:  "Ruby and the SOAP RunTime (SRT) Handler"
 date:   2006-10-31 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/10/sap4rails_007_s.html">&laquo; sap4rails 0.07 - SAP RFC and auto-reconnect</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/11/repensando_a_we.html">Repensando a web com Rails &raquo;</a>
-
-</p>
-
-<h2>October 31, 2006</h2>
-
-<h3>Ruby and the SOAP RunTime (SRT) Handler</h3>
 
 <p>
 Following on from my previous post about <a href="http://www.piersharding.com/blog/archives/2006/10/ruby_ruby_on_ra.html" target="_blank">Ruby, Ruby on Rails, and SAP Web Services Integration</a> - I would like to show how to switch to using the SOAP RunTime (SRT) Handler, which makes available SAP Web Services via Virtual Interfaces.

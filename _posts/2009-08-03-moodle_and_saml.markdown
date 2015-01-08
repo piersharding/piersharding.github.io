@@ -4,19 +4,7 @@ title:  "Moodle and SAML 2.0 Web SSO"
 date:   2009-08-03 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2009/06/perl_sapnwrfc_0.html">&laquo; Perl sapnwrfc 0.30</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2009/08/auth_saml_20_fo.html">Auth SAML 2.0 for Mahara &raquo;</a>
-
-</p>
-
-<h2>August  3, 2009</h2>
-
-<h3>Moodle and SAML 2.0 Web SSO</h3>
 
 <p>Of late I have been doing a lot of SSO integration work for the NZ Ministry of Education, and during this time I came across an excellent project  <a href="http://rnd.feide.no/">FEIDE</a>.  One of the off shoots of this has been the development of a high quality PHP library for SAML 2.0 Web SSO -  <a href="http://rnd.feide.no/simplesamlphp">SimpleSAMLPHP</a>.</p>
 

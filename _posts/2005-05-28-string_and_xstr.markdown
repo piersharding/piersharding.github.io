@@ -4,17 +4,7 @@ title:  "STRING and XSTRING"
 date:   2005-05-28 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/05/sap_and_planet.html">&laquo; SAP - and Planet SAP</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/06/saprfc_136_for_1.html">SAP::Rfc 1.36 for Active State Perl 5.8.x &raquo;</a>
-
-</p>
-
-<h2>May 28, 2005</h2>
-
-<h3>STRING and XSTRING</h3>
 
 <p>
 Something I find very frustrating with ABAP (the new incarnation) is that it is so hard to do the simple things.  For example, just the other day I needed to switch some character data from internat table => XSTRING.  So how would you go about that?

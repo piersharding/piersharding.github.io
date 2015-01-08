@@ -4,17 +4,7 @@ title:  "SAP::Rfc adds Registered RFC calls from SAP to Perl"
 date:   2003-05-01 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/03/perl_integratio.html">&laquo; Perl Integration with SAP</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2003/07/oscon_2003_inte.html">OSCON 2003 - Integrating SAP R/3 with Open Source Software and Open Protocols &raquo;</a>
-
-</p>
-
-<h2>May  1, 2003</h2>
-
-<h3>SAP::Rfc adds Registered RFC calls from SAP to Perl</h3>
 
 A major new release of SAP::Rfc for Perl is out on CPAN.  This new
 version (revised to 1.12) adds in the Registered RFC functionality of librfc.

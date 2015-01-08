@@ -4,16 +4,7 @@ title:  "Examples of tables and SAP::Rfc"
 date:   2002-05-03 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2002/05/reloading_perl.html">Reloading Perl Modules in a Server ( using Perl ) &raquo;</a>
-
-</p>
-
-<h2>May  3, 2002</h2>
-
-<h3>Examples of tables and SAP::Rfc</h3>
 
 I have had a number of emails lately about using SAP::Rfc, and the most common question I get asked is "How do I put entries in a table for an RFC call".  So here is a example ( that I should add into the documentation ):
 <br/>

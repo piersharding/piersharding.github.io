@@ -4,19 +4,7 @@ title:  "Perl sapnwrfc 0.30"
 date:   2009-06-28 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2009/04/dynamic_weather.html">&laquo; Dynamic Weather Map</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2009/08/moodle_and_saml.html">Moodle and SAML 2.0 Web SSO &raquo;</a>
-
-</p>
-
-<h2>June 28, 2009</h2>
-
-<h3>Perl sapnwrfc 0.30</h3>
 
 <p>I doing some work for a client recently, I got the opportunity to do some major performance work on <a href="http://search.cpan.org/dist/sapnwrfc/">sapnwrfc</a> for Perl.  The net result is that a number of memory leaks, mainly of Perl values not going out of scope properly, have been fixed.</p>
 

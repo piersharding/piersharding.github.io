@@ -4,17 +4,7 @@ title:  "Stop Energy"
 date:   2004-06-10 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2004/04/release_125_sap.html">&laquo; Release 1.25 - SAP::Rfc for Perl</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2004/08/sap_r3_python_s.html">SAP R/3 + Python = saprfc &raquo;</a>
-
-</p>
-
-<h2>June 10, 2004</h2>
-
-<h3>Stop Energy</h3>
 
 It seems that a lot of people are writing about Stop Energy these days -
 a kind of reaction to the negativeness that we so often experience in

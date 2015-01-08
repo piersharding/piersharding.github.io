@@ -4,17 +4,7 @@ title:  "ABAP, Strings and Concatenation"
 date:   2005-06-03 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/06/saprfc_136_for_1.html">&laquo; SAP::Rfc 1.36 for Active State Perl 5.8.x</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/06/ruby_on_rails_a.html">Ruby on Rails and ActiveRecord &raquo;</a>
-
-</p>
-
-<h2>June  3, 2005</h2>
-
-<h3>ABAP, Strings and Concatenation</h3>
 
 Of late I have been heavily involved in writing ABAP code that seems to be coliding with UNICODE support related issues.  For example - I have a fixed-width internal table, that I want to concatenate into a string, that is the requirement of a subsequent operation such as:
 <pre class='code'>

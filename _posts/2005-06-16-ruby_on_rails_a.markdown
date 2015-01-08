@@ -4,17 +4,7 @@ title:  "Ruby on Rails and ActiveRecord"
 date:   2005-06-16 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/06/abap_strings_an.html">&laquo; ABAP, Strings and Concatenation</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/07/saprfc_and_sapr.html">SAP::Rfc and SAP::Rfc gives SAP RFC &raquo;</a>
-
-</p>
-
-<h2>June 16, 2005</h2>
-
-<h3>Ruby on Rails and ActiveRecord</h3>
 
 Ruby on Rails is a celebrated recent phenomenon, and like many others, I have been seduced by its ease, and simplicity.  One of the things that I have found with its  MVC style approach, is that you really need to have a good grip on the design of your data requirements.  At the heart of this is <a href='http://api.rubyonrails.com/' target='_blank'>ActiveRecord</a> which is the Model.
 

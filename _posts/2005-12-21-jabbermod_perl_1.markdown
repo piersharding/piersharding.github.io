@@ -4,17 +4,7 @@ title:  "Jabber::mod_perl 0.10 released"
 date:   2005-12-21 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/11/sap_and_open_so.html">&laquo; SAP and Open Source: an analysis and letter to SAP and Shai</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/12/jabbermod_perl_2.html">Jabber::mod_perl 0.15 released &raquo;</a>
-
-</p>
-
-<h2>December 21, 2005</h2>
-
-<h3>Jabber::mod_perl 0.10 released</h3>
 
 Lately, I have been doing quite a bit more work on Jabber::mod_perl, after leaving it for a while.  Things are starting to heat up in the Jabber world, and Perl threading/unicode support has matured a bit, which is bring it back into focus again.
 <br/>

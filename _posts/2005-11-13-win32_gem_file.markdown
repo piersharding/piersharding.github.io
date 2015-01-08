@@ -4,17 +4,7 @@ title:  "Win32 gem file available for Ruby saprfc 0.11"
 date:   2005-11-13 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/10/saprfc_for_perl_1.html">&laquo; SAP::Rfc for Perl version 1.39 - finally UNICODE Support</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/11/write_your_own.html">Write your own RFCs without using SE37! &raquo;</a>
-
-</p>
-
-<h2>November 13, 2005</h2>
-
-<h3>Win32 gem file available for Ruby saprfc 0.11</h3>
 
 <p>
 Olivier has done it again - Olivier is my generous win32 porter for Perl and SAP::Rfc, and now he has made SAP::Rfc for Ruby available too, as a gem package.

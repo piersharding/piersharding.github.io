@@ -4,17 +4,7 @@ title:  "A taste for Inline"
 date:   2002-05-14 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2002/05/reloading_perl.html">&laquo; Reloading Perl Modules in a Server ( using Perl )</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2002/07/oscon_2002_embe.html">OSCON 2002 - Embedding Perl with Inline &raquo;</a>
-
-</p>
-
-<h2>May 14, 2002</h2>
-
-<h3>A taste for Inline</h3>
 
 <a href='http://inline.perl.org'>Inline</a> is one of those potentially killer
 apps for Perl.  It enables you to bind just about anything you feel like to

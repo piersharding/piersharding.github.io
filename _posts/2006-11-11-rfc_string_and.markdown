@@ -4,17 +4,7 @@ title:  "RFC_STRING and RFC_XSTRING type support for saprfc for Ruby"
 date:   2006-11-11 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/11/repensando_a_we.html">&laquo; Repensando a web com Rails</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2007/02/new_rfc_connect.html">New RFC Connector - sapnwrfc &raquo;</a>
-
-</p>
-
-<h2>November 11, 2006</h2>
-
-<h3>RFC_STRING and RFC_XSTRING type support for saprfc for Ruby</h3>
 
 <p>Support for string types now available in saprfc for Ruby from version 1.52.  This opens the way for interaction with RFC calls that require variable length storage eg. true strings in either character or binary form.  This was particularily useful for manipulating logon tickets, as shown by this example:
 </p>

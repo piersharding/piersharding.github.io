@@ -4,17 +4,7 @@ title:  "An amendment to the http/https proxy server in Perl"
 date:   2002-09-07 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2002/09/creating_a_prox.html">&laquo; Creating a proxy server in Perl that handles SSL too</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2002/11/gnomevfs_for_pe.html">GnomeVFS for Perl &raquo;</a>
-
-</p>
-
-<h2>September  7, 2002</h2>
-
-<h3>An amendment to the http/https proxy server in Perl</h3>
 
 Further to my previous blog about creating an SSL enabled Perl proxy - I have
 discovered that the SSL engine would not initialise correctly if a default

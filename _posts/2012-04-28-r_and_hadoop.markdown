@@ -4,19 +4,7 @@ title:  "R and Hadoop"
 date:   2012-04-28 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2012/04/moodle_bulk_man.html">&laquo; Moodle bulk management of users, courses, and course categories</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/06/sap_with_r.html">SAP with R &raquo;</a>
-
-</p>
-
-<h2>April 28, 2012</h2>
-
-<h3>R and Hadoop</h3>
 
 <p>
 <a href="http://www.r-project.org/">R</a> is my hackers language of choice for analysis work.  It really appeals to my sense of iteratively refining a solution.  To my delight, I stumbled across this set of libraries for calling out to Hadoop Mapreduce, HDFS, and HBASE directly from R - <a href="https://github.com/RevolutionAnalytics/RHadoop">RHadoop</a> .

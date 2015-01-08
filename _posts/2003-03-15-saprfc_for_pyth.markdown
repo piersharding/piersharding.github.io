@@ -4,17 +4,7 @@ title:  "saprfc for Python"
 date:   2003-03-15 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/02/microhttp_micro_2.html">&laquo; microhttp - Micro HTTP Client added basic HTTP 1.1 support</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2003/03/microhttp_micro_3.html">microhttp - Micro HTTP Client added basic SSL support &raquo;</a>
-
-</p>
-
-<h2>March 15, 2003</h2>
-
-<h3>saprfc for Python</h3>
 
 From the README: saprfc for Python module is intended to facilitate
 RFC calls to an SAP R/3 system of release 3.1x and above.  It may work for

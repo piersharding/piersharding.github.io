@@ -4,19 +4,7 @@ title:  "Kiwi Foo - BaaCamp 09"
 date:   2009-02-16 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2009/02/sapnwrfc_for_ph_1.html">&laquo; sapnwrfc for PHP - version 0.06</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2009/03/openerp.html">OpenERP &raquo;</a>
-
-</p>
-
-<h2>February 16, 2009</h2>
-
-<h3>Kiwi Foo - BaaCamp 09</h3>
 
 <p>It was a real privilege to have been invited to <a href="http://baacamp.org/">Kiwi Foo 09</a>, and it certainly didn't disappoint.  The uniqueness largely stems from the courageous forward thinking attitude of the organisers to give the attendees almost no guidance at all as to what the format is, and the content to cover.  The net result is informed conversation across the spectrum of problems and opportunities facing New Zealand, and an environment with huge cross-pollination potential for ideas, and creativity.</p>
 

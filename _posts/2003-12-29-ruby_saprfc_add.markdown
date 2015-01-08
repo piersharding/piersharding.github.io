@@ -4,17 +4,7 @@ title:  "Ruby saprfc adds Registered RFC calls from SAP R/3"
 date:   2003-12-29 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/07/oscon_2003_inte.html">&laquo; OSCON 2003 - Integrating SAP R/3 with Open Source Software and Open Protocols</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2004/04/calling_perl_fr.html">Calling Perl from Java &raquo;</a>
-
-</p>
-
-<h2>December 29, 2003</h2>
-
-<h3>Ruby saprfc adds Registered RFC calls from SAP R/3</h3>
 
 I finally found a  few spare moments to catch the Ruby saprfc implementation
 up with the Perl one.<br/>

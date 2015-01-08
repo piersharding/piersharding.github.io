@@ -4,19 +4,7 @@ title:  "OpenERP"
 date:   2009-03-02 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2009/02/kiwi_foo_baacam.html">&laquo; Kiwi Foo - BaaCamp 09</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2009/03/openerp_and_pen.html">OpenERP and Pentaho &raquo;</a>
-
-</p>
-
-<h2>March  2, 2009</h2>
-
-<h3>OpenERP</h3>
 
 <p>As part of my job at <a href="http://www.Catalyst.net.nz">Catalyst</a> I've been part of a process of evaluating Open Source ERP systems.  The first one up is <a href="http://www.OpenERP.com">OpenERP</a>  and I have to say that I'm pleasantly surprised.  Having come from a long term SAP background, I'm appreciating the thought that has gone into usability, and intuitiveness of the user experience.  Also - big bonus - it's NOT written in Java, but Python!</p>
 

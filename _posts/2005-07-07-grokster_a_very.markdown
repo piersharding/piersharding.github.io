@@ -4,17 +4,7 @@ title:  "Grokster - A very sad day for America"
 date:   2005-07-07 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/07/jabbermod_perl.html">&laquo; Jabber::mod_perl 0.06 released</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/07/sap_a_closed_cu.html">SAP a closed culture &raquo;</a>
-
-</p>
-
-<h2>July  7, 2005</h2>
-
-<h3>Grokster - A very sad day for America</h3>
 
 <p>I just read my regular news <a href='http://lists.ssc.com/pipermail/suitwatch/2005-July/000089.html'>letter</a> "Suit Watch" from <a href='http://www.docsearls.com/'>Doc Searls</a>, and what he had to say about the MGM v. Grokster case.  The outcome is highly worrying as it threatens anyone who creates software that may indeed be used for illegal purposes, even if there is significant evidence of properly intended use.
 </p>

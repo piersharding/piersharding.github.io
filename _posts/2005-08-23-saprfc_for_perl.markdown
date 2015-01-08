@@ -4,17 +4,7 @@ title:  "SAP::Rfc for Perl version 1.38"
 date:   2005-08-23 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/08/saprfc_for_ruby_1.html">&laquo; SAP::Rfc for Ruby version 0.09</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/10/new_release_of.html">New release of SAP::Rfc for Ruby - 0.10 &raquo;</a>
-
-</p>
-
-<h2>August 23, 2005</h2>
-
-<h3>SAP::Rfc for Perl version 1.38</h3>
 
 SAP::Rfc - SAP RFC - for Perl version 1.38 is now available on CPAN for download
 <a href='http://search.cpan.org/search?dist=SAP-Rfc'>here</a>.  This is a minor bug release correcting a problem with structured parameters.

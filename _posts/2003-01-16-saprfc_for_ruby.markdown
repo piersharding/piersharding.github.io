@@ -4,17 +4,7 @@ title:  "SAP::Rfc for Ruby"
 date:   2003-01-16 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/01/microhttp_micro_1.html">&laquo; microhttp - Micro HTTP Client  becomes a library - updated</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2003/02/microhttp_micro_2.html">microhttp - Micro HTTP Client added basic HTTP 1.1 support &raquo;</a>
-
-</p>
-
-<h2>January 16, 2003</h2>
-
-<h3>SAP::Rfc for Ruby</h3>
 
 SAP::Rfc for Ruby is the Ruby equivalent of the <a
 href='http://search.cpan.org/author/PIERS/'>SAP::Rfc</a> for Perl.

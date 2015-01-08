@@ -4,19 +4,7 @@ title:  "Hadoop and Dumbo"
 date:   2012-04-13 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2012/04/email_gource_ha.html">&laquo; Email, Gource, Hadoop, and Python</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/04/moodle_bulk_man.html">Moodle bulk management of users, courses, and course categories &raquo;</a>
-
-</p>
-
-<h2>April 13, 2012</h2>
-
-<h3>Hadoop and Dumbo</h3>
 
 <a href="https://github.com/klbostee/dumbo">Dumbo</a> is a <a href="http://www.python.org/">Python</a> framework for writing Map Reduce flows with or without <a href="http://hadoop.apache.org/">Hadoop</a>.  It's been a pain up until now, trying to get it going as it has relied on a number of patches to Hadoop for different byte streams, type codes etc. to make it work.  No longer - as the necessary patches ave now made it into core as of <a href="http://hadoop.apache.org/common/docs/r1.0.2/releasenotes.html">1.0.2</a>.
 <br/>

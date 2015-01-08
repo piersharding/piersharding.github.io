@@ -4,17 +4,7 @@ title:  "SAP on Rails"
 date:   2005-08-02 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/07/sap_a_closed_cu.html">&laquo; SAP a closed culture</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/08/saprfc_for_ruby_1.html">SAP::Rfc for Ruby version 0.09 &raquo;</a>
-
-</p>
-
-<h2>August  2, 2005</h2>
-
-<h3>SAP on Rails</h3>
 
 <style>
 <!--

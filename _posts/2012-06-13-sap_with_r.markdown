@@ -4,19 +4,7 @@ title:  "SAP with R"
 date:   2012-06-13 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2012/04/r_and_hadoop.html">&laquo; R and Hadoop</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/07/google_drive_re.html">Google Drive repository plugin for Moodle &raquo;</a>
-
-</p>
-
-<h2>June 13, 2012</h2>
-
-<h3>SAP with R</h3>
 
 <p>Something that piqued my curiosity lately was the developments with <a href="http://www.sap.com/solutions/technology/in-memory-computing-platform/hana/overview/index.epx">SAP HANA</a> and <a href="http://www.r-project.org/">R</a> (good overview <a href="http://www.slideshare.net/JitenderAswani/na-6693-r-and-sap-hana-dkom-jitenderaswanijensdoeprmund">here</a>).  This is definitely a new and exciting direction for SAP, with creating a well structured, and organised 'Big Table' option for in memory computing, and then going the extra mile to embed a specialised Open Source Statistical Computing package (R) in it - making the fore front of the world of statistical analysis open to those that dare.</p>
 <p> </p>

@@ -4,17 +4,7 @@ title:  "OSCON 2003 - Integrating SAP R/3 with Open Source Software and Open Pro
 date:   2003-07-04 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/05/saprfc_adds_reg.html">&laquo; SAP::Rfc adds Registered RFC calls from SAP to Perl</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2003/12/ruby_saprfc_add.html">Ruby saprfc adds Registered RFC calls from SAP R/3 &raquo;</a>
-
-</p>
-
-<h2>July  4, 2003</h2>
-
-<h3>OSCON 2003 - Integrating SAP R/3 with Open Source Software and Open Protocols</h3>
 
 Well <a href='http://www.pipetree.com/qmacro/'>DJ Adams</a> and I are back at
 OSCON again.  This years joint presentation is about an old favourite of

@@ -4,17 +4,7 @@ title:  "Write your own RFCs without using SE37!"
 date:   2005-11-15 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/11/win32_gem_file.html">&laquo; Win32 gem file available for Ruby saprfc 0.11</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/11/interfacing_dat_1.html">Interfacing data into BW using Perl, Ruby, or Python &raquo;</a>
-
-</p>
-
-<h2>November 15, 2005</h2>
-
-<h3>Write your own RFCs without using SE37!</h3>
 
 <p>
 Of late - I have found a need to be able to write RFCs on the fly - partly to be able to deliver new functionality to my user base for my RFC implementations for Perl, Python, and Ruby.  Using transports is not an option because of potential licensing issues, and the practicalities of release support.  I started looking into how you can actually write Function Modules on the fly, and ended up with SAP::Tools which I have first released for Ruby.

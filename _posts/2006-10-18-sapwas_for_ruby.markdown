@@ -4,17 +4,7 @@ title:  "sapwas for Ruby and HTTPS"
 date:   2006-10-18 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/10/ruby_ruby_on_ra.html">&laquo; Ruby, Ruby on Rails, and SAP Web Services Integration</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/10/sap4rails_007_s.html">sap4rails 0.07 - SAP RFC and auto-reconnect &raquo;</a>
-
-</p>
-
-<h2>October 18, 2006</h2>
-
-<h3>sapwas for Ruby and HTTPS</h3>
 
 <p>
 sapwas for Ruby now enables SAP Web Services to be called via HTTPS.  This first requires you to setup SSL support in NW4 - which isn't too much trouble if you follow Gregors' excellent advice <a href='https://www.sdn.sap.com/irj/sdn/weblogs?blog=/pub/wlg/1452'>here</a>.  Once that is in place, then it is just a matter of structuring the URL coorectly, as described in this example:

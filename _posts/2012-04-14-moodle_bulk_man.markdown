@@ -4,19 +4,7 @@ title:  "Moodle bulk management of users, courses, and course categories"
 date:   2012-04-14 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2012/04/hadoop_and_dumb.html">&laquo; Hadoop and Dumbo</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/04/r_and_hadoop.html">R and Hadoop &raquo;</a>
-
-</p>
-
-<h2>April 14, 2012</h2>
-
-<h3>Moodle bulk management of users, courses, and course categories</h3>
 
 <p>
 One of the (many) new features of <a href="http://moodle.org/">Moodle 2.2</a> is the ability to create administration Tools <a href="http://docs.moodle.org/dev/Admin_tools">plugins</a>.  This enables us developers to create and package (hopefully) useful tools that make the management of Moodle easier.  One of the things that I've seen wished for is the ability to bulk upload courses and related material, and over recent months, this is something that I've been working on.

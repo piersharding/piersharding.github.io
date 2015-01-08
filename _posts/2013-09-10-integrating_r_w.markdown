@@ -4,19 +4,7 @@ title:  "Integrating R with Pentaho"
 date:   2013-09-10 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2013/02/hosting_an_r_repo.html">&laquo; Hosting an R Repository for RSAP and RMonet</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2014/07/rstudio_server.html">RStudio Server and SSO &raquo;</a>
-
-</p>
-
-<h2>September 10, 2013</h2>
-
-<h3>Integrating R with Pentaho</h3>
 
 <p><strong><a href="https://github.com/piersharding/RPentaho">RPentaho</a> - R integration for Pentaho based on community tools.</strong></p>
 

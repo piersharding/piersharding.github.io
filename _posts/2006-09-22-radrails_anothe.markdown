@@ -4,17 +4,7 @@ title:  "saprfc and RadRails "
 date:   2006-09-22 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/09/sap4rails_now_h.html">&laquo; sap4rails now has SAP::WAS - SAP Web Services Integraton</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/09/saprfc_ruby_on.html">saprfc Ruby on Rails with AJAX &raquo;</a>
-
-</p>
-
-<h2>September 22, 2006</h2>
-
-<h3>saprfc and RadRails </h3>
 
 <p>
 <h3>Ruby On Rails and SAP</h3>

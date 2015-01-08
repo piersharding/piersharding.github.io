@@ -4,17 +4,7 @@ title:  "SAP::Rfc 1.36 for Active State Perl 5.8.x"
 date:   2005-06-03 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/05/string_and_xstr.html">&laquo; STRING and XSTRING</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/06/abap_strings_an.html">ABAP, Strings and Concatenation &raquo;</a>
-
-</p>
-
-<h2>June  3, 2005</h2>
-
-<h3>SAP::Rfc 1.36 for Active State Perl 5.8.x</h3>
 
 <p>Thanks once again, to Olivier for providing the win32 builds of SAP::Rfc.  The last (as ever) can be found at http://www.piersharding.com/download/win32/ .</p>
 

@@ -4,17 +4,7 @@ title:  "Builiding Perl SAP::Rfc for win32"
 date:   2006-03-30 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/12/jabbermod_perl_2.html">&laquo; Jabber::mod_perl 0.15 released</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/04/saprfc_015_for.html">SAP::Rfc 0.15 for Ruby &raquo;</a>
-
-</p>
-
-<h2>March 30, 2006</h2>
-
-<h3>Builiding Perl SAP::Rfc for win32</h3>
 
 <p>
 If you have a need to build SAP::Rfc for Perl (and this can be probably made to work for Ruby, and Python too), then this is for you.  Olivier Boudry, who has been faithfully maintaining win32 PPM build for me, has given comprehensive instructions on how-to build with the "free" Visual Studio version called VS Express 2005.

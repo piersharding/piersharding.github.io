@@ -4,17 +4,7 @@ title:  "Interfacing data into BW using Perl, Ruby, or Python"
 date:   2005-11-17 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/11/write_your_own.html">&laquo; Write your own RFCs without using SE37!</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/11/sap_and_open_so.html">SAP and Open Source: an analysis and letter to SAP and Shai &raquo;</a>
-
-</p>
-
-<h2>November 17, 2005</h2>
-
-<h3>Interfacing data into BW using Perl, Ruby, or Python</h3>
 
 <p>
 I've just completed the first SAP related course that I've been on for 

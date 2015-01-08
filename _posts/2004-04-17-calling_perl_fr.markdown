@@ -4,17 +4,7 @@ title:  "Calling Perl from Java"
 date:   2004-04-17 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/12/ruby_saprfc_add.html">&laquo; Ruby saprfc adds Registered RFC calls from SAP R/3</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2004/04/release_125_sap.html">Release 1.25 - SAP::Rfc for Perl &raquo;</a>
-
-</p>
-
-<h2>April 17, 2004</h2>
-
-<h3>Calling Perl from Java</h3>
 
 Something that I have been playing with of late is calling Perl from
 Java, and it is something that I can see people needing more and more as

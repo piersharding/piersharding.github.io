@@ -4,17 +4,7 @@ title:  "SAP a closed culture"
 date:   2005-07-21 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/07/grokster_a_very.html">&laquo; Grokster - A very sad day for America</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2005/08/sap_on_rails_1.html">SAP on Rails &raquo;</a>
-
-</p>
-
-<h2>July 21, 2005</h2>
-
-<h3>SAP a closed culture</h3>
 
 <p>
 Further to what <a href='http://www.pipetree.com/qmacro/'>DJ</a>  has <a href='http://www.pipetree.com/qmacro/blog/archives/2005/07/whither_sap.html'>written</a> on the subject of SAP and it's state of health, I'd like to add a feeling about the culture.

@@ -4,17 +4,7 @@ title:  "Reloading Perl Modules in a Server ( using Perl )"
 date:   2002-05-03 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2002/05/examples_of_tab.html">&laquo; Examples of tables and SAP::Rfc</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2002/05/a_taste_for_inl.html">A taste for Inline &raquo;</a>
-
-</p>
-
-<h2>May  3, 2002</h2>
-
-<h3>Reloading Perl Modules in a Server ( using Perl )</h3>
 
 Just this week I have been working on a problem on how to reload a Perl module
 in a continuous process eg. when you have changed the code in a loaded module,

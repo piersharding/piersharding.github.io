@@ -4,17 +4,7 @@ title:  "NW RFC SDK is now officially available"
 date:   2007-05-10 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2007/03/sap4rails_upgra.html">&laquo; sap4rails updated to support new sapnwrfc </a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2007/05/sapnwrfc_for_py.html">sapnwrfc for Python &raquo;</a>
-
-</p>
-
-<h2>May 10, 2007</h2>
-
-<h3>NW RFC SDK is now officially available</h3>
 
 <h2>The new SAP NW RFCSDK</h2>
 <p>

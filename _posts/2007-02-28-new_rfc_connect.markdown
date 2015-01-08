@@ -4,17 +4,7 @@ title:  "New RFC Connector - sapnwrfc"
 date:   2007-02-28 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/11/rfc_string_and.html">&laquo; RFC_STRING and RFC_XSTRING type support for saprfc for Ruby</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2007/03/sap4rails_upgra.html">sap4rails updated to support new sapnwrfc  &raquo;</a>
-
-</p>
-
-<h2>February 28, 2007</h2>
-
-<h3>New RFC Connector - sapnwrfc</h3>
 
 <p>
 SAP has undertaken a project to re-engineer the RFC SDK (creating the SAP NetWeaver RFC SDK), which is good news for the  Connectors (<a href="https://www.sdn.sap.com/irj/sdn/thread?forumID=50&threadID=286689">ref.</a>).</p>

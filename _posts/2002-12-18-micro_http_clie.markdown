@@ -4,17 +4,7 @@ title:  "Micro HTTP Client for the command line"
 date:   2002-12-18 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2002/11/gnomevfs_for_pe.html">&laquo; GnomeVFS for Perl</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2003/01/microhttp_micro.html">microhttp - Micro HTTP Client  becomes a library &raquo;</a>
-
-</p>
-
-<h2>December 18, 2002</h2>
-
-<h3>Micro HTTP Client for the command line</h3>
 
 Just recently we had a requirement to have a standalone command line tool for HTTP
 calls.... and I hear you say "what about lwp-request, lynx, links, wget, curl ..." - 

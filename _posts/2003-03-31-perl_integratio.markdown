@@ -4,17 +4,7 @@ title:  "Perl Integration with SAP"
 date:   2003-03-31 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2003/03/microhttp_micro_3.html">&laquo; microhttp - Micro HTTP Client added basic SSL support</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2003/05/saprfc_adds_reg.html">SAP::Rfc adds Registered RFC calls from SAP to Perl &raquo;</a>
-
-</p>
-
-<h2>March 31, 2003</h2>
-
-<h3>Perl Integration with SAP</h3>
 
 <table width="100%">
 <tr>

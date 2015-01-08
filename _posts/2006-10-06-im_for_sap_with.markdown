@@ -6,27 +6,6 @@ categories: general
 ---
 
 
-<div id="container">
-
-<div id="banner">
-<h1><a href="http://www.piersharding.com/blog/" accesskey="1">Where on Earth is Piers?</a></h1>
-<h2></h2>
-</div>
-
-<div class="content">
-
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/09/saprfc_ruby_on.html">&laquo; saprfc Ruby on Rails with AJAX</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/10/sap_and_rails_i.html">SAP the Enterprise, and Rails interest is building &raquo;</a>
-
-</p>
-
-<h2>October  6, 2006</h2>
-
-<h3>IM for SAP with Jabber (XMPP)</h3>
-
 <p>
 <a href="http://www.jabber.org" target="_blank">Jabber and IM</a> is very much in the ascendancy at the moment, thanks to <a href="http://www.google.com/talk" target="_blank">Google Talk</a> which uses the very same <a href="http://www.xmpp.org" target="_blank">XMPP</a> protocol for messaging.</p>
 <p>

@@ -4,19 +4,7 @@ title:  "Journey into Hadoop"
 date:   2012-03-26 12:00:00
 categories: general
 ---
-<p align="right">
 
-<a href="http://www.piersharding.com/blog/archives/2011/06/web_services_fo.html">&laquo; Web Services for Mahara</a> |
-
-<a href="http://www.piersharding.com/blog/">Main</a>
-
-| <a href="http://www.piersharding.com/blog/archives/2012/03/hadoop_and_sing.html">Hadoop and single file to mapper processing flow &raquo;</a>
-
-</p>
-
-<h2>March 26, 2012</h2>
-
-<h3>Journey into Hadoop</h3>
 
 <p>I've been building up my background knowledge on current toolsets used in Data Science, and part of this is <a href="http://www.r-project.org/">R</a> and another is <a href="http://hadoop.apache.org/">Hadoop</a>.</p>
 

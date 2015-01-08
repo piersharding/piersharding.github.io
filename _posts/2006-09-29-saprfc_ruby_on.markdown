@@ -4,17 +4,7 @@ title:  "saprfc Ruby on Rails with AJAX"
 date:   2006-09-29 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2006/09/radrails_anothe.html">&laquo; saprfc and RadRails </a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/10/im_for_sap_with.html">IM for SAP with Jabber (XMPP) &raquo;</a>
-
-</p>
-
-<h2>September 29, 2006</h2>
-
-<h3>saprfc Ruby on Rails with AJAX</h3>
 
 Since I wrote an <a href="http://www.piersharding.com/blog/archives/2005/08/sap_on_rails_1.html" target="_blank">article</a> about integration of SAP and <a href="http://www.rubyonrails.com" target="_blank">Ruby on Rails</a>, it has been great to see the beginnings of a kernel of interest.  As a result I decided to package up the sap4rails code and distribute it properly on <a href="http://raa.ruby-lang.org/project/sap4rails/" target="_blank">RAA</a>.
 <br>

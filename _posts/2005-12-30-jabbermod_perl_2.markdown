@@ -4,17 +4,7 @@ title:  "Jabber::mod_perl 0.15 released"
 date:   2005-12-30 12:00:00
 categories: general
 ---
-<p align="right">
-<a href="http://www.piersharding.com/blog/archives/2005/12/jabbermod_perl_1.html">&laquo; Jabber::mod_perl 0.10 released</a> |
 
-<a href="http://www.piersharding.com/blog/">Main</a>
-| <a href="http://www.piersharding.com/blog/archives/2006/03/builiding_perl.html">Builiding Perl SAP::Rfc for win32 &raquo;</a>
-
-</p>
-
-<h2>December 30, 2005</h2>
-
-<h3>Jabber::mod_perl 0.15 released</h3>
 
 <p>
 Version 0.15 brings a more complete process for creating new packets, and more complete Namespace handling, especially in the area of searching for elements within a NAD.<br/>
