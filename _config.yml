@@ -4,6 +4,7 @@ email: piers@ompka.net
 description: > # this means to ignore newlines until "baseurl:"
   Where on earth is Piers, My projects, and bits &apos;n bobs
 baseurl: "" # the subpath of your site, e.g. /blog/
+paginate: 5
 url: "http://piersharding.com" # the base hostname & protocol for your site
 twitter_username: Piers
 github_username:  piersharding

@@ -1,5 +1,6 @@
 ---
 layout: default
+paginate: true
 ---
 
 <div class="home">
@@ -7,7 +8,7 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -17,6 +18,19 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+
+
+<div class="blog-nav">
+{% if paginator.previous_page == 1 %}
+<p class="alignleft"><a href="/">&larr; Previous Page</a></p>
+{% elsif paginator.previous_page != None %}
+<p class="alignleft"><a href="/page{{ paginator.previous_page }}">&larr; Previous Page</a></p>
+{% endif %}
+{% if paginator.next_page != None %}
+<p class="alignright"><a href="/page{{ paginator.next_page }}">Next Page &rarr;</a></p>
+{% endif %}
+<div style="clear: both;"></div>
+</div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
