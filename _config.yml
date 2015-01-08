@@ -9,6 +9,7 @@ url: "http://piersharding.com" # the base hostname & protocol for your site
 twitter_username: Piers
 github_username:  piersharding
 googleplus_username:  PiersHarding
+linkedin_username:  piersharding
 
 # Build settings
 markdown: kramdown
