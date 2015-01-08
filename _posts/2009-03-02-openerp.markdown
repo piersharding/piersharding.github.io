@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "OpenERP"
+date:   2009-03-02 12:00:00
+categories: general
+---
+<p align="right">
+
+<a href="http://www.piersharding.com/blog/archives/2009/02/kiwi_foo_baacam.html">&laquo; Kiwi Foo - BaaCamp 09</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+
+| <a href="http://www.piersharding.com/blog/archives/2009/03/openerp_and_pen.html">OpenERP and Pentaho &raquo;</a>
+
+</p>
+
+<h2>March  2, 2009</h2>
+
+<h3>OpenERP</h3>
+
+<p>As part of my job at <a href="http://www.Catalyst.net.nz">Catalyst</a> I've been part of a process of evaluating Open Source ERP systems.  The first one up is <a href="http://www.OpenERP.com">OpenERP</a>  and I have to say that I'm pleasantly surprised.  Having come from a long term SAP background, I'm appreciating the thought that has gone into usability, and intuitiveness of the user experience.  Also - big bonus - it's NOT written in Java, but Python!</p>
+
+<p>Having just finished the Order to Cash cycle, and then followed it through on the Financial reporting. and cost account side, I'm finding that there is nothing missing that I would have expected to find from SAP - I'm excited, as I feel that OpenSource may have finally reached prime time in the ERP world.</p>
+
+<p>Next up will be <a href="http://www.compiere.com">Compiere</a>, which will have to go a long way to win me over I think.</p>
+
+<p>Note: on reflection, I should add that this is in the context of SMB.</p>
+
+<div id="a000079more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at March  2, 2009  8:06 PM</p>
+
+
+
+
+

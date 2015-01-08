@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "SAP::Rfc 1.36 for Active State Perl 5.8.x"
+date:   2005-06-03 12:00:00
+categories: general
+---
+<p align="right">
+<a href="http://www.piersharding.com/blog/archives/2005/05/string_and_xstr.html">&laquo; STRING and XSTRING</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+| <a href="http://www.piersharding.com/blog/archives/2005/06/abap_strings_an.html">ABAP, Strings and Concatenation &raquo;</a>
+
+</p>
+
+<h2>June  3, 2005</h2>
+
+<h3>SAP::Rfc 1.36 for Active State Perl 5.8.x</h3>
+
+<p>Thanks once again, to Olivier for providing the win32 builds of SAP::Rfc.  The last (as ever) can be found at http://www.piersharding.com/download/win32/ .</p>
+
+<p><strong>Updated:</strong></p>
+
+<p>Sorry guys - I got the permissions wrong on this - please try again.</p>
+
+<div id="a000030more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at June  3, 2005  8:00 AM</p>
+
+
+
+
+<h2 id="comments">Comments</h2>
+
+<div id="c2">
+<p>Hi Piers, <br />
+it looks as if the ActiveState Perl 5.8.x version can't be downloaded due to security restrictions... Can you publish that file to the public?<br />
+Regards<br />
+   Detlef</p>
+</div>
+<p class="posted">Posted by: Detlef  at June  6, 2005  6:18 PM</p>
+<div id="c3">
+<p>Hi Piers,<br />
+I tried to download "SAP::Rfc 1.36 for Active State Perl 5.8.x" but I always get "permission denied". What's wrong ?</p>
+
+<p>Regards<br />
+Hermannn</p>
+</div>
+<p class="posted">Posted by: Hermann Matthes  at June 11, 2005  1:25 AM</p>
+
+
+
+
+
+<script type="text/javascript" language="javascript">
+<!--
+if (document.comments_form.email != undefined)
+    document.comments_form.email.value = getCookie("mtcmtmail");
+if (document.comments_form.author != undefined)
+    document.comments_form.author.value = getCookie("mtcmtauth");
+if (document.comments_form.url != undefined)
+    document.comments_form.url.value = getCookie("mtcmthome");
+if (getCookie("mtcmtauth") || getCookie("mtcmthome")) {
+    document.comments_form.bakecookie[0].checked = true;
+} else {
+    document.comments_form.bakecookie[1].checked = true;
+}
+//-->
+</script>
+
+
+
+

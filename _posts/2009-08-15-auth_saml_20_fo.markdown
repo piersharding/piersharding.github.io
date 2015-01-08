@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Auth SAML 2.0 for Mahara"
+date:   2009-08-15 12:00:00
+categories: general
+---
+<p align="right">
+
+<a href="http://www.piersharding.com/blog/archives/2009/08/moodle_and_saml.html">&laquo; Moodle and SAML 2.0 Web SSO</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+
+| <a href="http://www.piersharding.com/blog/archives/2009/08/new_release_for.html">New release for sapnwrfc PHP and Python &raquo;</a>
+
+</p>
+
+<h2>August 15, 2009</h2>
+
+<h3>Auth SAML 2.0 for Mahara</h3>
+
+<p>Following on from the SAML 2.0 work that I've done recently for Moodle, I thought it was useful to do the same for the <a href="http://www.mahara.org">Mahara</a> ePortfolio service, while I was in the same space.  Details of the first release can be found <a href="http://wiki.mahara.org/Plugins/Auth/Saml">here</a>, with tested version for both trunk, and 1.1_STABLE.</p>
+
+<div id="a000084more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at August 15, 2009  9:25 AM</p>
+
+
+
+
+

@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "OSCON 2002 - Embedding Perl with Inline"
+date:   2002-07-28 12:00:00
+categories: general
+---
+<p align="right">
+<a href="http://www.piersharding.com/blog/archives/2002/05/a_taste_for_inl.html">&laquo; A taste for Inline</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+| <a href="http://www.piersharding.com/blog/archives/2002/09/creating_a_prox.html">Creating a proxy server in Perl that handles SSL too &raquo;</a>
+
+</p>
+
+<h2>July 28, 2002</h2>
+
+<h3>OSCON 2002 - Embedding Perl with Inline</h3>
+
+This year I gave a <a
+href='http://conferences.oreillynet.com/cs/os2002/view/e_sess/2731'>talk</a>
+at OSCON on an approach to embedding Perl in daemon applications, or integrating Perl in to event driven libraries.
+The slides can be found at: <a href='/tydwp/tydwp.dkb'>Embedding Perl with Inline</a>, and the examples can be found at: <a href='/download/tydwp.tgz'>source archive</a>.
+
+<div id="a000012more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at July 28, 2002 10:37 PM</p>
+
+
+
+
+

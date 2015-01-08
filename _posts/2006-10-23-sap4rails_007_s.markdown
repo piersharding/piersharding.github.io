@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "sap4rails 0.07 - SAP RFC and auto-reconnect"
+date:   2006-10-23 12:00:00
+categories: general
+---
+<p align="right">
+<a href="http://www.piersharding.com/blog/archives/2006/10/sapwas_for_ruby.html">&laquo; sapwas for Ruby and HTTPS</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+| <a href="http://www.piersharding.com/blog/archives/2006/10/ruby_and_the_so.html">Ruby and the SOAP RunTime (SRT) Handler &raquo;</a>
+
+</p>
+
+<h2>October 23, 2006</h2>
+
+<h3>sap4rails 0.07 - SAP RFC and auto-reconnect</h3>
+
+I released <a href='http://raa.ruby-lang.org/project/sap4rails'>sap4rails</a> 0.07 this week, which corrects a problem with RFC connections not reconnecting correctly (this is using <a href='http://raa.ruby-lang.org/project/saprfc'>saprfc</a> as the driver - there is no similar issue wtih the <a href='http://raa.ruby-lang.org/project/sapwas'>sapwas</a> driver, which uses stateless HTTP).  This is especially important when the R/3 (ABAP) application server your Rails application is connected to goes down temporarily (or indeed any other temporary communication disturbance). Before an RFC call is executed, the conection is ping checked, and then a single reconnection attempt is tried if the ping fails.  If the reconnect fails then an error is raised so it is a good idea to wrap your code in a rescue block, to deal with the situation in your local conditions.  Here is an example log:
+</p>
+<pre>
+...
+[SapUser] missing_method: Z_BAPI_USER_GETLIST
+[SapUser] ifaces: ["SUSR_USER_LOCKSTATE_GET", "BAPI_USER_GET_DETAIL", "BAPI_USER_UNLOCK", "BAPI_USER_LOCK", "Z_BAPI_USER_GETLIST"]
+in check connect...
+Think Im connected - lets check ...
+RFC PING[]...
+Something wrong with connection(1) - do it again ...
+new connection(2) ...
+allready connected ...
+[SapUser] missing_method: Z_BAPI_USER_GETLIST
+[SapUser] ifaces: ["SUSR_USER_LOCKSTATE_GET", "BAPI_USER_GET_DETAIL", "BAPI_USER_UNLOCK", "BAPI_USER_LOCK", "Z_BAPI_USER_GETLIST"]
+in check connect...
+Think Im connected - lets check ...
+RFC PING[true]...
+...
+</pre>
+<p>
+Here you can see the first RFC_PING return nil, and the second after reconnect return [true]. 
+</p>
+
+<div id="a000069more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at October 23, 2006  3:05 PM</p>
+
+
+
+
+

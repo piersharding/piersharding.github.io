@@ -1,0 +1,287 @@
+---
+layout: post
+title:  "SAP with R"
+date:   2012-06-13 12:00:00
+categories: general
+---
+<p align="right">
+
+<a href="http://www.piersharding.com/blog/archives/2012/04/r_and_hadoop.html">&laquo; R and Hadoop</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+
+| <a href="http://www.piersharding.com/blog/archives/2012/07/google_drive_re.html">Google Drive repository plugin for Moodle &raquo;</a>
+
+</p>
+
+<h2>June 13, 2012</h2>
+
+<h3>SAP with R</h3>
+
+<p>Something that piqued my curiosity lately was the developments with <a href="http://www.sap.com/solutions/technology/in-memory-computing-platform/hana/overview/index.epx">SAP HANA</a> and <a href="http://www.r-project.org/">R</a> (good overview <a href="http://www.slideshare.net/JitenderAswani/na-6693-r-and-sap-hana-dkom-jitenderaswanijensdoeprmund">here</a>).  This is definitely a new and exciting direction for SAP, with creating a well structured, and organised 'Big Table' option for in memory computing, and then going the extra mile to embed a specialised Open Source Statistical Computing package (R) in it - making the fore front of the world of statistical analysis open to those that dare.</p>
+<p> </p>
+<p>This is utterly brilliant, but the problem is that I can't access it as I don't have access to a SAP HANA instance (nor would most people).  It is also heavily geared to 'Big Data', when there is still an awful lot to be gained from small, and mid-range data analysis arenas (resisting the temptation about size and clich&eacute;s).</p>
+<p> </p>
+<p>This has definitely touched on my hackers itch, and in response to this I've created one more Scripting Language Connector for R - <a href="https://github.com/piersharding/RSAP">RSAP</a>.</p>
+<p> </p>
+<p>The idea of this is to enable RFC calls (using the SAP NW RFC SDK) where any table contents are returned as <a href="http://cran.r-project.org/doc/manuals/R-intro.html#Data-frames">data.frames</a> (in R parlance). </p>
+<p> </p>
+<p>Once you have this data in R, then the world is your oyster - it is up to your imagination as to what you do with it.  To give an overview of how it works, and what you can do, I'm going to step through the process of installing and using RSAP.</p>
+<p> </p>
+<h2><span style="font-size: 12pt;"><strong>Obtaining and Installing</strong></span></h2>
+<p> </p>
+<p>Firstly you need to install R.  I recommend using <a href="http://www.rstudio.org/">RStudio</a> as it is a comfortable graphical user interface - you can get it from <a href="http://www.rstudio.org/download/">here</a>.   </p>
+<p>Under debian (read Ubuntu) flavoured Linux you can install R first before downloading/installing RStudio using:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">sudo apt-get install r-base-core r-base-dev r-base-html r-recommended</span></p>
+<p> </p>
+<p> </p>
+<h2>SAP NW RFCSDK</h2>
+<p> </p>
+<p>The SDK is available from the SAP Service Market Place SWDC - this is a forum discussion on getting it <a href="/thread/950318" _jive_internal="true">http://scn.sap.com/thread/950318</a></p>
+<p>If you have (like me) installed the NPL SAP Test Drive instance, then the SAP NW RFC libs exist in the /usr/sap/NPL/SYS/exe/run directory, the only problem being that it does not contain the C header files (really - SAP should make this available on SDN).</p>
+<p> </p>
+<h2>RSAP</h2>
+<p> </p>
+<p>Download or clone the RSAP project source from <a href="https://github.com/piersharding/RSAP">https://github.com/piersharding/RSAP</a></p>
+<p> </p>
+<h2>Building</h2>
+<p> </p>
+<p>Ensure that the R library prerequisites are installed.  To do this there is a helper script in the RSAP source code directory.  cd to the source directory (downloaded above) - in my case /home/piers/git/public/RSAP - and run the following:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">R --no-save &lt; install_dependencies.R</span></p>
+<p> </p>
+<p>This will prompt to install the packages yaml, reshape, plotrix, and RUnit.</p>
+<p> </p>
+<p>To build and install the RSAP package, cd to the source directory (downloaded above) - in my case /home/piers/git/public/RSAP - run the following:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">R CMD INSTALL --build --preclean --clean --configure-args='--with-nwrfcsdk-include=/home/piers/code/sap/nwrfcsdk/include --with-nwrfcsdk-lib=/home/piers/code/sap/nwrfcsdk/lib' .</span></p>
+<p> </p>
+<p>You must change the values for <span style="font-family: 'andale mono', times;">--with-nwrfcsdk-include</span> and <span style="font-family: 'andale mono', times;">--with-nwrfcsdk-lib</span> to point to the directory locations that you have downloaded the SAP NW RFC SDK to.</p>
+<p> </p>
+<p>Under Linux, it is also likely that you need to add the lib directory to the LD cache or set the LD_LIBRARY_PATH variable.</p>
+<p> </p>
+<p>Setting the LD Cache:</p>
+<p>as root, edit /etc/ld.so.conf and add the lib path from above to it on it's own line.  Now regenrate the cache by executiong 'sudo ldconfig'.</p>
+<p> </p>
+<p>Setting LD_LIBRARY_PATH</p>
+<p>You must ensure that the following environment variable is set in all your shells:</p>
+<p>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/nwrfcsdk/lib</p>
+<p>The easiest way to do this is to add the above line to your $HOME/.bashrc file so that it happens automatically for all future shells.</p>
+<p> </p>
+<h2>Does it work?</h2>
+<p> </p>
+<p>Once the build and install of the RSAP package is complete, now you should test to make sure it's all working.</p>
+<p> </p>
+<p>Change to the package source code directory (you are probably still there from the above activities), and launch either R or RStudio.</p>
+<p>From the R command line try the following:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">&gt; library(RSAP)</span></p>
+<p><span style="font-family: 'andale mono', times;">Loading required package: yaml</span></p>
+<p><span style="font-family: 'andale mono', times;">&gt; </span></p>
+<p> </p>
+<p>You should get the above confirmation message that the dependent yaml package has been loaded.  Now we are ready to try some R wizardry.</p>
+<p> </p>
+<h2>How to work with RSAP</h2>
+<p> </p>
+<p>Lets work through the general process steps for interacting with SAP.</p>
+<p> </p>
+<h3>Connecting to SAP</h3>
+<p> </p>
+<p>Using RSAP we need to establish a connection to SAP.  For this you need an account that has the appropriate access for RFC calls, and functionality access.  Connections can be built in two ways - directly passing connection parameters:</p>
+<p><span style="font-family: 'andale mono', times;">&gt;     conn &lt;- RSAPConnect(ashost="nplhost", sysnr="42",</span></p>
+<p><span style="font-family: 'andale mono', times;">                          client="001", user="developer", </span></p>
+<p><span style="font-family: 'andale mono', times;">                          passwd="developer", lang="EN")</span></p>
+<p><span style="font-family: 'andale mono', times;">&gt; </span></p>
+<p> </p>
+<p>Or using a YAML encoded file that contains the connection details:</p>
+<p><span style="font-family: 'andale mono', times;">&gt; conn &lt;- RSAPConnect("sap.yml")</span></p>
+<p><span style="font-family: 'andale mono', times;">&gt; </span></p>
+<p> </p>
+<p>The sap.yml file is structured like:</p>
+<p><span style="font-family: 'andale mono', times;">ashost: nplhost</span></p>
+<p><span style="font-family: 'andale mono', times;">sysnr: "42"</span></p>
+<p><span style="font-family: 'andale mono', times;">client: "001"</span></p>
+<p><span style="font-family: 'andale mono', times;">user: developer</span></p>
+<p><span style="font-family: 'andale mono', times;">passwd: developer</span></p>
+<p><span style="font-family: 'andale mono', times;">lang: EN</span></p>
+<p><span style="font-family: 'andale mono', times;">trace: 1</span></p>
+<p> </p>
+<p>The above activates the trace functionality in NW RFC SDK.  This will create trace files in the current working directory, and are invaluable for debugging connectivity problems.</p>
+<p> </p>
+<p> </p>
+<h3><span style="font-family: 'andale mono', times;">Calling SAP</span></h3>
+<p><span style="font-family: 'andale mono', times;"><br /></span></p>
+<p>Now we have the connection object, we can get connection info with it:</p>
+<p><span style="font-family: 'andale mono', times;">info &lt;- RSAPGetInfo(conn)</span></p>
+<p>Query the system with:</p>
+<p><span style="font-family: 'andale mono', times;">res &lt;- RSAPInvoke(conn, "&lt;RFC Function Name", parms)</span></p>
+<p>Or close the connection:</p>
+<p><span style="font-family: 'andale mono', times;">RSAPClose(conn)</span></p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">RSAPInvoke</span>() is what we are most interested in, and we need to pass the parameters as a series of nested named lists.  The classic example is RFC_READ_TABLE:</p>
+<p><span style="font-family: 'andale mono', times;">parms &lt;- list('DELIMITER' = '|',</span></p>
+<p><span style="font-family: 'andale mono', times;">              'FIELDS' = list(FIELDNAME = list('CARRID', 'CONNID', 'PRICE',</span></p>
+<p><span style="font-family: 'andale mono', times;">                                               'SEATSMAX', 'SEATSOCC')),</span></p>
+<p><span style="font-family: 'andale mono', times;">              'OPTIONS' = list(TEXT = list("CARRID = 'AA' ", " AND CONNID = 0017 ")),</span></p>
+<p><span style="font-family: 'andale mono', times;">              'QUERY_TABLE' = 'SFLIGHTS2')</span></p>
+<p><span style="font-family: 'andale mono', times;">res &lt;- RSAPInvoke(conn, "RFC_READ_TABLE", parms)</span></p>
+<p> </p>
+<p>The names must correspond directly to the parameter and structure (for tables) names, and use numeric and character types as appropriate.</p>
+<p>The other thing that is really important to get your head around is that R data structures are column oriented, which means we have to think differently about tables that we get from SAP.  Tables in SAP translate to lists of vectors where the outer list is a list of column names (a slightly loose analogy but it will do) and the vectors hang off these column names corresponding to all the values in that column down the rows.</p>
+<p> </p>
+<p> </p>
+<h2>Working through the examples in get_flights.R</h2>
+<p> </p>
+<p>In the source code package there is an example script - get_flights.R.  It uses the standard demonstration data for the Flight Data system contained in table SFLIGHT2.  Let's look at what this does.</p>
+<p> </p>
+<p> Load libraries:</p>
+<p><span style="font-family: 'andale mono', times;">&gt; library(RSAP)</span></p>
+<p><span style="font-family: 'andale mono', times;">Loading required package: yaml</span></p>
+<p><span style="font-family: 'andale mono', times;">&gt; library(reshape)</span></p>
+<p><span style="font-family: 'andale mono', times;">Loading required package: plyr</span></p>
+<p>  <span style="font-family: 'andale mono', times;">Attaching package: &lsquo;reshape&rsquo;</span></p>
+<p>  <span style="font-family: 'andale mono', times;">The following object(s) are masked from &lsquo;package:plyr&rsquo;:</span></p>
+<p>  <span style="font-family: 'andale mono', times;">    rename, round_any</span></p>
+<p><span style="font-family: 'andale mono', times;">&gt; library(plotrix)</span></p>
+<p><span style="font-family: 'andale mono', times;">&gt;</span></p>
+<p>We now have all the necessary libraries for the rest of the examples.</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">conn &lt;- RSAPConnect("sap.yml")</span></p>
+<p><span style="font-family: 'andale mono', times;">parms &lt;- list('DELIMITER' = ';',</span></p>
+<p><span style="font-family: 'andale mono', times;">              'QUERY_TABLE' = 'SFLIGHTS2')</span></p>
+<p><span style="font-family: 'andale mono', times;">res &lt;- RSAPInvoke(conn, "RFC_READ_TABLE", parms)</span></p>
+<p><span style="font-family: 'andale mono', times;">RSAPClose(conn)</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight = res$DATA</span></p>
+<p><span style="font-family: 'andale mono', times;">flds &lt;- sub("\\s+$", "", res$FIELDS$FIELDNAME)</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight &lt;- data.frame(sflight, colsplit(sflight$WA, split = ";", names = flds))</span></p>
+<p><span style="font-family: 'andale mono', times;"><br /></span></p>
+<p> </p>
+<p>This connects to SAP, calls RFC_READ_TABLE to get the contents of SFLIGHT2, and sets the column delimiter for that table as ';'.  We close the connection and copy the table data from the return parameter res$DATA (see RFC_READ_TABLE in transaction SE37) into sflight.  We also grab the field names returned in table FIELDS, and remove the whitespace at the end.  Next - this is where the importance of the ';' delimiter is - using the colsplit() function from the reshape package, we split return DATA into columns named by the FIELDS that RFC_READ_TABLE provided us.</p>
+<p> </p>
+<p>Now we have a data.frame that looks a lot like the table SFLIGHT2 when viewed in transaction SE16.</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">sflight &lt;- cbind(sflight, FLIGHTNO = paste(sub("\\s+$", "",</span></p>
+<p><span style="font-family: 'andale mono', times;">                                           sflight$CARRID),sflight$CONNID, sep=""))</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight$SEGMENT &lt;- paste(sflight$AIRPFROM, sflight$AIRPTO, sep=" - ")</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight$CARRNAME &lt;- sub("\\s+$", "", sflight$CARRNAME)</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight$DISTANCE &lt;- as.numeric(lapply(sflight$DISTANCE,</span></p>
+<p><span style="font-family: 'andale mono', times;">                                      FUN=function (x) {sub("\\*","", x)}))</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight$DISTANCE &lt;- as.numeric(lapply(sflight$DISTANCE,</span></p>
+<p><span style="font-family: 'andale mono', times;">                                      FUN=function (x) {if (x == 0) NA else x}))</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight[sflight$CARRNAME == 'Qantas Airways','DISTANCE'] &lt;- 10258</span></p>
+<p> </p>
+<p>This next chunk created  new vectors (columns) FLIGHTNO combined from CARRID and CONNID, SEGMENT from AIRPFROM and AIRPTO, and cleaned vectors CARRNAME, and DISTANCE.</p>
+<p> </p>
+<p>Now create some aggregated views, to generate visualisations from:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">airline_avgocc &lt;- aggregate(data.frame(SEATSMAX=sflight$SEATSMAX,</span></p>
+<p><span style="font-family: 'andale mono', times;">                                       SEATSOCC=sflight$SEATSOCC,</span></p>
+<p><span style="font-family: 'andale mono', times;">                                       OCCUPANCY=sflight$SEATSOCC/sflight$SEATSMAX),</span></p>
+<p><span style="font-family: 'andale mono', times;">                            by=list(carrname=sflight$CARRNAME), FUN=mean, na.rm=TRUE)</span></p>
+<p><span style="font-family: 'andale mono', times;">airline_sumocc &lt;- aggregate(data.frame(SEATSOCC=sflight$SEATSOCC), </span></p>
+<p><span style="font-family: 'andale mono', times;">                            by=list(carrname=sflight$CARRNAME), FUN=sum, na.rm=TRUE)</span></p>
+<p> </p>
+<p>Show a pie chart  - sum of airline occupancy as a share of market:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">x11()</span></p>
+<p><span style="font-family: 'andale mono', times;">lbls &lt;- paste(airline_sumocc$carrname, "\n", sprintf("%.2f%%",          </span></p>
+<p><span style="font-family: 'andale mono', times;">        (airline_sumocc$SEATSOCC/sum(airline_sumocc$SEATSOCC))*100), sep="")</span></p>
+<p><span style="font-family: 'andale mono', times;">pie3D(airline_sumocc$SEATSOCC, labels=lbls, </span></p>
+<p><span style="font-family: 'andale mono', times;">      col=rainbow(length(airline_sumocc$carrname)),</span></p>
+<p><span style="font-family: 'andale mono', times;">      main="Occupancy sum share for Airlines", explode=0.1)</span></p>
+<p> </p>
+<p><img alt="pie.png" class="jive-image" height="196" src="http://scn.sap.com/servlet/JiveServlet/downloadImage/38-67980-110479/240-196/pie.png" style="width: 240px; height: 196.36363636363635px;" width="240" __jive_id="110479" /></p>
+<p> </p>
+<p> </p>
+<p>Create a Stacked Bar Plot with Colors and Legend showing a summary of occupancy by segment and carrier - to do this we need to generate a summary (aggregate), and fill in the missing combinations of the grid, and then switch the orientation of rows for columns to present to the plotting funcitons:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;">d &lt;- aggregate(SEATSOCC ~ CARRNAME:SEGMENT, data=sflight, FUN=sum, na.rm=FALSE)</span></p>
+<p><span style="font-family: 'andale mono', times;">d2 &lt;- with(d, expand.grid(CARRNAME = unique(d$CARRNAME), SEGMENT = unique(d$SEGMENT)))</span></p>
+<p><span style="font-family: 'andale mono', times;">airline_sumsegocc &lt;- merge(d, d2, all.y = TRUE)</span></p>
+<p><span style="font-family: 'andale mono', times;">airline_sumsegocc$SEATSOCC[is.na(airline_sumsegocc$SEATSOCC)] &lt;- 0</span></p>
+<p><span style="font-family: 'andale mono', times;"># switch orientation to segment * carrier</span></p>
+<p><span style="font-family: 'andale mono', times;">counts &lt;- data.frame(unique(airline_sumsegocc$CARRNAME))</span></p>
+<p><span style="font-family: 'andale mono', times;">for (a in unique(airline_sumsegocc$SEGMENT))  </span></p>
+<p><span style="font-family: 'andale mono', times;">    {counts &lt;- cbind(counts, </span></p>
+<p><span style="font-family: 'andale mono', times;">     airline_sumsegocc$SEATSOCC[which(airline_sumsegocc$SEGMENT == a)]);}</span></p>
+<p><span style="font-family: 'andale mono', times;">counts[,1] &lt;- NULL</span></p>
+<p><span style="font-family: 'andale mono', times;">colnames(counts) &lt;- unique(airline_sumsegocc$SEGMENT);</span></p>
+<p><span style="font-family: 'andale mono', times;">rownames(counts) &lt;- unique(airline_sumsegocc$CARRNAME);</span></p>
+<p><span style="font-family: 'andale mono', times;">x11()</span></p>
+<p><span style="font-family: 'andale mono', times;">barplot(as.matrix(counts), main="Total Occupancy by Segment and Carrier",</span></p>
+<p><span style="font-family: 'andale mono', times;">        ylab="Number of Seats", </span></p>
+<p><span style="font-family: 'andale mono', times;">        col=rainbow(dim(counts)[1]), </span></p>
+<p><span style="font-family: 'andale mono', times;">        ylim=c(0, 15000), legend = rownames(counts))</span></p>
+<p> </p>
+<p><img alt="barchart.png" class="jive-image" height="284" src="http://scn.sap.com/servlet/JiveServlet/downloadImage/38-67980-110480/348-284/barchart.png" style="width: 348px; height: 284.72727272727275px;" width="348" __jive_id="110480" /></p>
+<p> </p>
+<p> </p>
+<p>Lastly - we create a simple performance indicator using a time series comparison of different airlines:</p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;"># performance by airline over time - dollars per customer KM</span></p>
+<p><span style="font-family: 'andale mono', times;">sflight$FLDATEYYMM &lt;- substr(sflight$FLDATE, start=1, stop=6)</span></p>
+<p><span style="font-family: 'andale mono', times;">d &lt;- aggregate(data.frame(PAYMENTSUM=sflight$PAYMENTSUM,</span></p>
+<p><span style="font-family: 'andale mono', times;">                          SEATSOCC=sflight$SEATSOCC,</span></p>
+<p><span style="font-family: 'andale mono', times;">                          DISTANCE=sflight$DISTANCE,</span></p>
+<p><span style="font-family: 'andale mono', times;">                          PERFORMANCE=(sflight$PAYMENTSUM/(sflight$SEATSOCC *</span></p>
+<p><span style="font-family: 'andale mono', times;">                             sflight$DISTANCE))),</span></p>
+<p><span style="font-family: 'andale mono', times;">               by=list(carrname=sflight$CARRNAME, </span></p>
+<p><span style="font-family: 'andale mono', times;">                       fldateyymm=sflight$FLDATEYYMM),</span></p>
+<p><span style="font-family: 'andale mono', times;">               FUN=sum, na.rm=TRUE)</span></p>
+<p><span style="font-family: 'andale mono', times;">d2 &lt;- with(d, expand.grid(carrname = unique(d$carrname), </span></p>
+<p><span style="font-family: 'andale mono', times;">                          fldateyymm = unique(d$fldateyymm)))</span></p>
+<p><span style="font-family: 'andale mono', times;">agg_perf &lt;- merge(d, d2, all.y = TRUE)</span></p>
+<p><span style="font-family: 'andale mono', times;">agg_perf &lt;- agg_perf[order(agg_perf$carrname, agg_perf$fldateyymm),]</span></p>
+<p><span style="font-family: 'andale mono', times;">agg_perf$PERFORMANCE[is.na(agg_perf$PERFORMANCE)] &lt;- 0</span></p>
+<p> </p>
+<p><span style="font-family: 'andale mono', times;"># create time series and plot comparison</span></p>
+<p><span style="font-family: 'andale mono', times;">perf_series &lt;- data.frame(1:length(unique(agg_perf$fldateyymm)))</span></p>
+<p><span style="font-family: 'andale mono', times;">for (a in unique(agg_perf$carrname)) </span></p>
+<p><span style="font-family: 'andale mono', times;">    {perf_series &lt;- cbind(perf_series, </span></p>
+<p><span style="font-family: 'andale mono', times;">       agg_perf$PERFORMANCE[which(agg_perf$carrname == a)]);}</span></p>
+<p><span style="font-family: 'andale mono', times;">perf_series[,1] &lt;- NULL</span></p>
+<p><span style="font-family: 'andale mono', times;">colnames(perf_series) &lt;- unique(agg_perf$carrname);</span></p>
+<p><span style="font-family: 'andale mono', times;"># convert all to time series</span></p>
+<p><span style="font-family: 'andale mono', times;">for (a in length(unique(agg_perf$carrname)))</span></p>
+<p><span style="font-family: 'andale mono', times;">    {perf_series[[a]] &lt;- ts(perf_series[,a], start=c(2011,5), frequency=12)}</span></p>
+<p><span style="font-family: 'andale mono', times;"># plot the first and line the rest</span></p>
+<p><span style="font-family: 'andale mono', times;">x11()</span></p>
+<p><span style="font-family: 'andale mono', times;">ts.plot(ts(perf_series, start=c(2011,5), frequency=12), </span></p>
+<p><span style="font-family: 'andale mono', times;">           gpars=list(main="Performance: dollar per customer KM",</span></p>
+<p><span style="font-family: 'andale mono', times;">                      xlab="Months", </span></p>
+<p><span style="font-family: 'andale mono', times;">                      ylab="Dollars", </span></p>
+<p><span style="font-family: 'andale mono', times;">                      col=rainbow(dim(perf_series)[2]), xy.labels=TRUE))</span></p>
+<p><span style="font-family: 'andale mono', times;">legend(2012.05, 3.2, legend=colnames(perf_series), </span></p>
+<p><span style="font-family: 'andale mono', times;">                     col=rainbow(dim(perf_series)[2]), lty=1, seg.len=1)</span></p>
+<p> </p>
+<p><img alt="timeseries.png" class="jive-image" height="273" src="http://scn.sap.com/servlet/JiveServlet/downloadImage/38-67980-110481/334-273/timeseries.png" style="width: 334px; height: 273.27272727272725px;" width="334" __jive_id="110481" /></p>
+<p> </p>
+<p> </p>
+<p>Hopefully, I've shown that there is a lot that can be done with R - especially in the area of adHoc advanced business intelligence and data analysis.  I have not really even scratched the surface in terms of what R can offer for advanced statistical analysis and modelling - that is where the true wizards live.</p>
+<p> </p>
+<p>I would love to hear back from anyone who tries RSAP out - issues and user experiences alike.</p>
+<p> </p>
+<p>References:</p>
+<ul>
+<li>Post on <a href="http://scn.sap.com/community/developer-center/hana/blog/2012/05/21/when-sap-hana-met-r--first-kiss" _jive_internal="true">SAP HANA and R</a> from Alvaro</li>
+</ul>
+<p>Basic R Tutorials</p>
+<ul>
+<li><a href="http://www.statmethods.net/">Quick R</a></li>
+<li><a href="http://wiki.stdout.org/rcookbook/">The R Cookbook</a></li>
+<li><a href="http://www.r-statistics.com/">The R Statistics Blog</a></li>
+<li><a href="http://www.harding.edu/fmccown/r/">Producing simple Graphs with R</a></li>
+<li><a href="http://cran.r-project.org/">The CRAN project Documentation</a></li>
+</ul>
+
+<div id="a000095more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at June 13, 2012  2:37 PM</p>
+
+
+
+
+

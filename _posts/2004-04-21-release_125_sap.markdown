@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "Release 1.25 - SAP::Rfc for Perl"
+date:   2004-04-21 12:00:00
+categories: general
+---
+<p align="right">
+<a href="http://www.piersharding.com/blog/archives/2004/04/calling_perl_fr.html">&laquo; Calling Perl from Java</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+| <a href="http://www.piersharding.com/blog/archives/2004/06/stop_energy.html">Stop Energy &raquo;</a>
+
+</p>
+
+<h2>April 21, 2004</h2>
+
+<h3>Release 1.25 - SAP::Rfc for Perl</h3>
+
+Release 1.25 for Perl SAP::Rfc brings two new features for registered RFC
+calls.  These are:
+<ul>
+  <li> Raise proper EXCEPTIONS using die.</li>
+  <li> Access information about the system and the current incoming RFC
+call.</li>
+</ul>
+
+<h3>Raise EXCEPTIONS </h3>
+<p>
+When enabled - SAP style exception keywords thrown in ABAP, allow you to use
+"die" anywhere in your RFC callback handler to trigger the appropriate
+EXCEPTION. eg.
+<pre>
+use SAP::Rfc;
+...
+$SAP::Rfc::EXCEPTION_ONLY = 1;
+...
+$rfc->accept();
+...
+
+sub do_my_special_callback{
+
+  # some code that needs to throw an EXCEPTION...
+  die "MY_CUSTOM_EXCEPTION_FOR_ABAP";
+  
+  return 1;
+
+}
+</pre>
+
+The above code would cause the MY_CUSTOM_EXCEPTION_FOR_ABAP EXCEPTION to be
+triggered in the ABAP code that accessed the registered RFC.
+</p>
+
+<h3>System information for Registered RFCs</h3>
+<p>
+ you can now access comprehensive information regarding the current incoming
+RFC call from within a registered RFC callback.
+<br/>
+The first parameter passed into the callback sub is an instance of SAP::Iface.
+This now has a new method sysinfo() that returns a hash  ref of all the
+details regarding the current call - the partner system, the user etc.
+<br/>
+eg.
+<pre>
+...
+# The main callback for handling faxes
+sub do_sx_object_receive {
+
+  my $iface = shift;
+  debug("Running do_sx_object_receive...");
+  my $sysinfo = $iface->sysinfo();
+  warn "The system Id is: ".$sysinfo->{'sysid'}."\n";
+
+  ...
+
+</pre>
+
+</p>
+
+Further information on SAP::Rfc for Perl can be found at: <a
+href='http://search.cpan.org/search?dist=SAP-Rfc'>SAP::Rfc</a>.
+
+<div id="a000026more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at April 21, 2004  9:45 AM</p>
+
+
+
+
+

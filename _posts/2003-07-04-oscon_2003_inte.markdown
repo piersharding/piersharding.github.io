@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "OSCON 2003 - Integrating SAP R/3 with Open Source Software and Open Protocols"
+date:   2003-07-04 12:00:00
+categories: general
+---
+<p align="right">
+<a href="http://www.piersharding.com/blog/archives/2003/05/saprfc_adds_reg.html">&laquo; SAP::Rfc adds Registered RFC calls from SAP to Perl</a> |
+
+<a href="http://www.piersharding.com/blog/">Main</a>
+| <a href="http://www.piersharding.com/blog/archives/2003/12/ruby_saprfc_add.html">Ruby saprfc adds Registered RFC calls from SAP R/3 &raquo;</a>
+
+</p>
+
+<h2>July  4, 2003</h2>
+
+<h3>OSCON 2003 - Integrating SAP R/3 with Open Source Software and Open Protocols</h3>
+
+Well <a href='http://www.pipetree.com/qmacro/'>DJ Adams</a> and I are back at
+OSCON again.  This years joint presentation is about an old favourite of
+ours - Integrating SAP R/3 with Open Source Software and Open Protocols.
+<br/>
+The talk will cover the main integration product suites of <a
+href='http://www.sap.com'>SAP</a> (RFC, SAP
+Business Connector, and the Web Application Suite aka Net Weaver), and how
+Open Source, and Open Protocols can be used to engineer conduits in and
+out of SAP.
+<br/>
+As usual, we have a live demo showing the different options for the
+various supported protocols, across different Open Source programming
+languages - so come along and have a laugh with/at us ;-).
+<br/>
+
+Further information about OSCON and the presentation can be found at: <a
+href='http://conferences.oreillynet.com/cs/os2003/view/e_sess/3759'>http://conferences.oreillynet.com/cs/os2003/view/e_sess/3759</a>
+- our slot is on Wednesday the 9th of July, at 5:15 pm.
+
+<div id="a000013more"><div id="more">
+
+</div></div>
+
+<p class="posted">Posted by PiersHarding at July  4, 2003  9:49 AM</p>
+
+
+
+
+
